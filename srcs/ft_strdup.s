@@ -6,7 +6,7 @@
 #    By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/07 04:28:36 by gsenra-a          #+#    #+#              #
-#    Updated: 2021/03/07 04:51:41 by gsenra-a         ###   ########.fr        #
+#    Updated: 2021/03/07 05:33:54 by gsenra-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,9 @@ section .text
     extern  __errno_location
     extern  ft_strlen
     extern  malloc
-    extern  ft_strdup
+    extern  ft_strcpy
 
-ft_strdup
+ft_strdup:
     call    ft_strlen       ;verificar tamanho da str que vai ser alocada
     inc     rax             ;incrementar 1 para usar no malloc
     push    rdi             ;coloca str src na stack
@@ -30,7 +30,7 @@ ft_strdup
     call    ft_strcpy
     ret
 
-error
+error:
     neg     rax                 ;inicialemnte -1 (retorno malloc fail)
     push    rax                 ;"guarda" valor de rax no topo da pilha (stack)
     call    __errno_location    ;chamar/executar instrução de erro
