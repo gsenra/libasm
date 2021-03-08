@@ -6,7 +6,7 @@
 /*   By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/27 23:23:07 by user42            #+#    #+#             */
-/*   Updated: 2021/03/08 02:45:39 by gsenra-a         ###   ########.fr       */
+/*   Updated: 2021/03/08 03:27:49 by gsenra-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,36 +16,36 @@ static void	test_strdup(void)
 {
 	char *copia;
 	char *cp;
+
+	copia = strdup(XUXA);
+	cp = ft_strdup(XUXA);
 	printf("\n ############## TEST STRDUP ##############");
 	printf("\n\nTEST STR");
 	printf("\nstr: %s", XUXA);
-	copia = strdup(XUXA);
 	printf("\nORIGINAL: %s", copia);
-	cp = ft_strdup(XUXA);
 	printf("\nPIRATA: %s\n", cp);
 
-	free (copia);
+	free(copia);
 	free(cp);
 
-
+	copia = strdup(VAZIO);
+	cp = ft_strdup(VAZIO);
 	printf("\n\nTEST STR VAZIA");
 	printf("\nstr: %s", VAZIO);
-	copia = strdup(VAZIO);
 	printf("\nORIGINAL: %s", copia);
-	cp = ft_strdup(VAZIO);
 	printf("\nPIRATA: %s\n", cp);
 
-	free (copia);
+	free(copia);
 	free(cp);
 
+	copia = strdup(ANAJULIA);
+	cp = ft_strdup(ANAJULIA);
 	printf("\nTEST STR LONGA");
 	printf("\n\nstr: %s\n", ANAJULIA);
-	copia = strdup(ANAJULIA);
 	printf("\nORIGINAL: %s\n", copia);
-	cp = ft_strdup(ANAJULIA);
 	printf("\nPIRATA: %s\n", cp);
 
-	free (copia);
+	free(copia);
 	free(cp);
 }
 
@@ -184,9 +184,9 @@ static void	test_strcmp(void)
 
 static void	test_strcpy(void)
 {
-	char dest[ft_strlen(XUXA)];
-	char dest1[ft_strlen(NUMEROS)];
-	char dest2[ft_strlen(ANAJULIA)];
+	char dest[(ft_strlen(XUXA)) + 1];
+	char dest1[(ft_strlen(NUMEROS)) + 1];
+	char dest2[(ft_strlen(ANAJULIA)) + 1];
 
 	printf("\n ############## TEST STRCPY ##############");
 	printf("\n\nsrc: %s", XUXA);
@@ -229,7 +229,7 @@ static void	test_all(void)
 	test_strcmp();
 	test_write();
 	test_read();
-	test_strdup();
+	//test_strdup();
 }
 
 int			main(int argc, char** argv)
