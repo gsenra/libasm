@@ -6,7 +6,7 @@
 /*   By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 04:56:43 by gsenra-a          #+#    #+#             */
-/*   Updated: 2021/03/07 17:53:37 by gsenra-a         ###   ########.fr       */
+/*   Updated: 2021/03/07 23:25:20 by gsenra-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ Nunca acreditei na ilusão de ter você pra mim. Me atormenta a previsão \
 do nosso destino. Eu passando o dia a te esperar. Você sem me notar. \
 Quando tudo tiver fim, você vai estar com um cara. Um alguém sem carinho. \
 Será sempre um espinho. Dentro do meu coração."
+
+#define XUXA "ABC da Xuxa!"
+
+#define VAZIO ""
+
+#define NUMEROS "123456789"
 
 size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char *dest, const char *src);

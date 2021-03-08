@@ -6,7 +6,7 @@
 #    By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/07 05:05:55 by gsenra-a          #+#    #+#              #
-#    Updated: 2021/03/07 19:25:24 by gsenra-a         ###   ########.fr        #
+#    Updated: 2021/03/07 22:49:35 by gsenra-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,6 @@ fclean: clean
 	$(RM) -rf $(TESTER)
 	$(RM) -rf write.txt
 	$(RM) -rf ft_write.txt
-	$(RM) -rf libasm.a
 
 re: fclean all
 

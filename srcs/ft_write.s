@@ -6,7 +6,7 @@
 #    By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/06 04:10:01 by user42            #+#    #+#              #
-#    Updated: 2021/03/07 21:58:22 by gsenra-a         ###   ########.fr        #
+#    Updated: 2021/03/08 00:50:06 by gsenra-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ segment .text
         extern __errno_location
 
 ft_write:
-    mov     rax,0               ;setar rax (retorno) como 0 (instrução read)
+    mov     rax,1               ;setar rax (retorno) como 1 (instrução read)
     syscall                     ;chamar/executar a instrução 0
     cmp     rax,0               ;verificar se a write retornou erro
     jl      error               ;executar error caso o retorno da comparação seja < 0
