@@ -6,7 +6,7 @@
 /*   By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 04:56:43 by gsenra-a          #+#    #+#             */
-/*   Updated: 2021/03/07 23:25:20 by gsenra-a         ###   ########.fr       */
+/*   Updated: 2021/03/08 03:59:43 by gsenra-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,11 @@ Será sempre um espinho. Dentro do meu coração."
 
 #define NUMEROS "123456789"
 
-size_t	ft_strlen(const char *s);
-char	*ft_strcpy(char *dest, const char *src);
-int		ft_strcmp(const char *str1, const char *str2);
-size_t	ft_write(int fd, void* buf, size_t cnt);
-size_t	ft_read(int fd, const void* buf, size_t cnt);
-char	*ft_strdup(const char *string);
+size_t		ft_strlen(const char *s);
+char		*ft_strcpy(char *dst, const char *src);
+int			ft_strcmp(const char *s1, const char *s2);
+ssize_t		ft_write(int fd, const void *buf, size_t count);
+ssize_t		ft_read(int fd, void *buf, size_t count);
+char		*ft_strdup(const char *s1);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: gsenra-a <gsenra-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/27 23:23:07 by user42            #+#    #+#             */
-/*   Updated: 2021/03/08 03:27:49 by gsenra-a         ###   ########.fr       */
+/*   Updated: 2021/03/08 03:57:05 by gsenra-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -229,7 +229,7 @@ static void	test_all(void)
 	test_strcmp();
 	test_write();
 	test_read();
-	//test_strdup();
+	test_strdup();
 }
 
 int			main(int argc, char** argv)
